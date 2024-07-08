@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e9ecef;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#todo-app {
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 800px;
+}
+
+h1 {
+  text-align: center;
+  color: #343a40;
+}
+
+#todo-input-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#todo-input-container input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+#todo-input-container button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#todo-input-container button:hover {
+  background-color: #218838;
+}
+
+#todo-container {
+  display: flex;
+}
+
+#todo-summary {
+  flex: 1;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+#todo-summary p {
+  margin: 0;
+  font-size: 1.1em;
+  color: #495057;
+}
+
+#todo-content {
+  flex: 3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #dee2e6;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+button.delete {
+  color: red;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+button.complete {
+  color: green;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
